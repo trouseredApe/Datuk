@@ -15,7 +15,7 @@ public class Txt {
 		this.path=path;
 	}
 	
-	public void writeContentToTxt(Data data, boolean onlyNumbers) throws IOException {
+	public void writeDataWithoutTitles(Data data, boolean onlyNumbers) throws IOException {
 
 		if (path.equals(null)) {
 			path = "defaultData.data";
@@ -38,7 +38,7 @@ public class Txt {
 		out.close();
 	}
 
-	public void writeToTxt(Data data, boolean onlyNumbers) throws IOException {
+	public void writeData(Data data, boolean onlyNumbers) throws IOException {
 
 		if (path.equals(null)) {
 			path = "defaultData.data";
