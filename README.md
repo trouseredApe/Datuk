@@ -24,7 +24,15 @@ Sure! There is still a lot to do and anybody willing to contribute is welcome
 * Any kind of useful enhancements are welcome.
 * Anything else you would like to improve.
 
+### How do I use the API? ###
+
+* Go to [Releases](https://github.com/mayuso/Datuk/releases)
+* Download the latest release. (.jar File)
+* Import the .jar file to your project as any other external library.
+
 ### How do I compile the code on my machine? ###
+
+**(If you only want to use the API, look at ["How do I use the API?"]())**
 
 1) Fork the repository.
 
