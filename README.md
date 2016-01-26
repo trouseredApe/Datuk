@@ -32,7 +32,7 @@ Sure! There is still a lot to do and anybody willing to contribute is welcome
 
 ### How do I compile the code on my machine? ###
 
-**(If you only want to use the API, look at ["How do I use the API?"]())**
+**(If you only want to use the API, look at ["How do I use the API?"](https://github.com/mayuso/Datuk#how-do-i-use-the-api))**
 
 1) Fork the repository.
 
