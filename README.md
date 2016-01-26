@@ -27,8 +27,10 @@ Sure! There is still a lot to do and anybody willing to contribute is welcome
 ### How do I compile the code on my machine? ###
 
 1) Fork the repository.
+
 2) Clone it to your computer.
-3) Import it to your favourite IDE as a Maven project..
+
+3) Import it to your favourite IDE as a Maven project.
 
 ### State of the project ###
 
