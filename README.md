@@ -2,7 +2,7 @@
 
 ### What is it? ###
 
-Datuk is an API for Machine learning and Data Mining in general. Includes:
+Datuk is an API for Machine learning and Data Mining in general. It includes:
 
 * Data management.
 * Data visualization.
@@ -11,7 +11,7 @@ Datuk is an API for Machine learning and Data Mining in general. Includes:
 
 ### What is it not? ###
 
-Datuk is not a GUI program. It has no GUI, it is a collection of classes and functions for other developers to create their programs/applications.
+Datuk is not a GUI program. It is a collection of classes and functions for other developers to create their programs/applications.
 
 ### Can I contribute? ###
 
