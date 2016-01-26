@@ -22,7 +22,7 @@ public class PieChart extends ApplicationFrame {
 
 	public PieChart(String title, Data data, int index) {
 		super(title);
-		setContentPane(createDemoPanel(data, index));
+		setContentPane(createDemoPanel(data, index, title));
 	}
 
 	private static PieDataset createDataset(Data data, int index) {
@@ -73,8 +73,8 @@ public class PieChart extends ApplicationFrame {
 		return chart;
 	}
 
-	public static JPanel createDemoPanel(Data data, int index) {
-		JFreeChart chart = createChart(createDataset(data, index), (String) data.getData().get(0).get(index - 1));
+	public static JPanel createDemoPanel(Data data, int index, String title) {
+		JFreeChart chart = createChart(createDataset(data, index), title);
 		return new ChartPanel(chart);
 	}
 
