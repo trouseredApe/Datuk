@@ -36,4 +36,9 @@ Sure! There is still a lot to do and anybody willing to contribute is welcome
 
 Datuk is still in early development, while the project is in 0.Y.Z version, backwards compatibility of new version is not guaranteed.
 
+### External APIs used in Datuk ###
+
+* [Java POI](https://poi.apache.org/) (Version 3.13)
+* [JavaML](http://java-ml.sourceforge.net/) (Version 0.1.7)
+* [JFreeChart](http://www.jfree.org/index.html) (Version 1.0.13)
 
