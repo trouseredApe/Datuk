@@ -25,7 +25,7 @@ public class PieChart extends ApplicationFrame {
 		
 		setContentPane(createDemoPanel(data, index, title));
 		this.pack();
-		this.setVisible(true);
+		
 	}
 
 	private static PieDataset createDataset(Data data, int index) {

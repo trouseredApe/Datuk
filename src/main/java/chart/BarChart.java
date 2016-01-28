@@ -27,7 +27,6 @@ public class BarChart extends ApplicationFrame {
 	
 		
 		setContentPane(chartPanel);
-		this.setVisible(true);
 	}
 
 	private CategoryDataset createDataset(Data data, int index) {
