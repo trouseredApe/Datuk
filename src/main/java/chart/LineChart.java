@@ -1,9 +1,9 @@
 package chart;
 
-/*import java.util.ArrayList;
+import java.util.ArrayList;
 
 import org.jfree.chart.ChartFactory;
-import org.jfree.chart.ChartPane
+import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
@@ -25,7 +25,9 @@ public class LineChart extends ApplicationFrame {
          
       ChartPanel chartPanel = new ChartPanel( lineChart );
       chartPanel.setPreferredSize( new java.awt.Dimension( 560 , 367 ) );
+     
       setContentPane( chartPanel );
+      this.setVisible(true);
    }
 
    private DefaultCategoryDataset createDataset(Data data , int index)
@@ -64,5 +66,5 @@ public class LineChart extends ApplicationFrame {
 		return dataset; 
    }
 
-}*/
+}
 

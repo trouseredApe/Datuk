@@ -22,7 +22,10 @@ public class PieChart extends ApplicationFrame {
 
 	public PieChart(String title, Data data, int index) {
 		super(title);
+		
 		setContentPane(createDemoPanel(data, index, title));
+		this.pack();
+		this.setVisible(true);
 	}
 
 	private static PieDataset createDataset(Data data, int index) {
