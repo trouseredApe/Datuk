@@ -23,7 +23,10 @@ public class XYChart extends ApplicationFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public XYChart( String applicationTitle, String chartTitle, String x, String y, String seriesName, Data data, int index1, int index2){
+	public XYChart( String applicationTitle, String chartTitle, 
+			String x, String y, String seriesName, 
+			Data data, int index1, int index2){
+		
 	      super(applicationTitle);
 	      JFreeChart xylineChart = ChartFactory.createXYLineChart(
 	         chartTitle ,
