@@ -20,10 +20,10 @@ public class PieChart extends ApplicationFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public PieChart(String title, Data data, int index) {
-		super(title);
+	public PieChart(String windowTitle, String chartTitle, Data data, int index) {
+		super(windowTitle);
 		
-		setContentPane(createDemoPanel(data, index, title));
+		setContentPane(createDemoPanel(data, index, chartTitle));
 		this.pack();
 		
 	}
