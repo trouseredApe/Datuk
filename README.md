@@ -17,6 +17,8 @@ Datuk is not a GUI program. It is a collection of classes and functions for othe
 
 Sure! There is still a lot to do and anybody willing to contribute is welcome
 
+**(We have a label called "Easy" in our Issue Tracker, we consider this Issues "Noob Friendly", you might want to start from here if you are not experienced)**
+
 ### What needs to be done? ###
 
 * Code refactorings to make the code simpler and/or faster
@@ -48,5 +50,5 @@ Datuk is still in early development, while the project is in 0.Y.Z version, back
 
 * [Java POI](https://poi.apache.org/) (Version 3.13)
 * [JavaML](http://java-ml.sourceforge.net/) (Version 0.1.7)
-* [JFreeChart](http://www.jfree.org/index.html) (Version 1.0.13)
+* [JFreeChart](http://www.jfree.org/index.html) (Version 1.0.9)
 
