@@ -50,5 +50,5 @@ Datuk is still in early development, while the project is in 0.Y.Z version, back
 
 * [Java POI](https://poi.apache.org/) (Version 3.13)
 * [JavaML](http://java-ml.sourceforge.net/) (Version 0.1.7)
-* [JFreeChart](http://www.jfree.org/index.html) (Version 1.0.13)
+* [JFreeChart](http://www.jfree.org/index.html) (Version 1.0.9)
 
