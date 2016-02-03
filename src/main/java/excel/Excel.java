@@ -71,7 +71,7 @@ public class Excel {
 
 	}
 
-	public void writeData(Data data, boolean onlyNumbers) {
+	public void writeData(Data data) {
 		try {
 			File file = new File(path);
 			if(!file.exists()) {
@@ -88,11 +88,7 @@ public class Excel {
 				int rowSize =dataList.get(i).size();
 				for(int j = 0; j < rowSize; j++){
 					row.createCell(j);
-					if(onlyNumbers){
-						row.getCell(j).setCellValue(Double.parseDouble((String)dataList.get(i).get(j)));
-					}else{
-						row.getCell(j).setCellValue((String) dataList.get(i).get(j));	
-					}
+					row.getCell(j).setCellValue((String) dataList.get(i).get(j));	
 				}
 			}
 			workbook.write(fOutputStream);

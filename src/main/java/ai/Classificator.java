@@ -25,7 +25,6 @@ import net.sf.javaml.tools.data.FileHandler;
 public class Classificator {
 	
 	public Classificator(){}
-
 	
 	public Classifier kDtreeKNN(String path, int key)
 			throws IOException, IllegalArgumentException {
