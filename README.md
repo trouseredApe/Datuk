@@ -17,6 +17,8 @@ Datuk is not a GUI program. It is a collection of classes and functions for othe
 
 Sure! There is still a lot to do and anybody willing to contribute is welcome
 
+**(We have a label called "Easy" in our Issue Tracker, we consider this Issues "Noob Friendly", you might want to start from here if you are not experienced)**
+
 ### What needs to be done? ###
 
 * Code refactorings to make the code simpler and/or faster
