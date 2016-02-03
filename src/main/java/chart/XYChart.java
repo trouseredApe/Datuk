@@ -23,15 +23,14 @@ public class XYChart extends ApplicationFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public XYChart( String applicationTitle, String chartTitle, 
-			String x, String y, String seriesName, 
+	public XYChart( String applicationTitle, String chartTitle, String seriesName, 
 			Data data, int index1, int index2){
 		
 	      super(applicationTitle);
 	      JFreeChart xylineChart = ChartFactory.createXYLineChart(
 	         chartTitle ,
-	         x ,
-	         y,
+	         String.valueOf(data.getData().get(0).get(index1)) ,
+	         String.valueOf(data.getData().get(0).get(index2)),
 	         createDataset(seriesName, data, index1, index2) ,
 	         PlotOrientation.VERTICAL ,
 	         true , true , false);

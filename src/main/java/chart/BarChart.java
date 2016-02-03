@@ -18,10 +18,10 @@ public class BarChart extends ApplicationFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public BarChart(String applicationTitle, String chartTitle, Data data, int index) {
+	public BarChart(String applicationTitle, Data data, int index) {
 		super(applicationTitle);
 		JFreeChart barChart = ChartFactory.createBarChart((String) data.getData().get(0).get(index - 1), "Category",
-				chartTitle, createDataset(data, index), PlotOrientation.VERTICAL, true, true, false);
+				"Value", createDataset(data, index), PlotOrientation.VERTICAL, true, true, false);
 		ChartPanel chartPanel = new ChartPanel(barChart);
 		chartPanel.setPreferredSize(new java.awt.Dimension(560, 367));
 	
