@@ -22,8 +22,11 @@ public class PieChart extends ApplicationFrame {
 
 	public PieChart(String applicationTitle, Data data, int index) {
 		super(applicationTitle);
-		
-		setContentPane(createDemoPanel(data, index, String.valueOf(data.getData().get(0).get(index))));
+		if(index>0){
+			setContentPane(createDemoPanel(data, index, String.valueOf(data.getData().get(0).get(index - 1))));
+		}else{
+			setContentPane(createDemoPanel(data, index, String.valueOf(data.getData().get(0).get(0))));
+		}
 		this.pack();
 		
 	}

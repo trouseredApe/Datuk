@@ -20,9 +20,18 @@ public class BarChart extends ApplicationFrame {
 
 	public BarChart(String applicationTitle, Data data, int index) {
 		super(applicationTitle);
-		JFreeChart barChart = ChartFactory.createBarChart((String) data.getData().get(0).get(index - 1), "Category",
-				"Value", createDataset(data, index), PlotOrientation.VERTICAL, true, true, false);
+		JFreeChart barChart;
+		if(index>0){
+			barChart = ChartFactory.createBarChart((String) data.getData().get(0).get(index - 1), "Category",
+					"Value", createDataset(data, index), PlotOrientation.VERTICAL, true, true, false);
+			
+		}else{
+			barChart = ChartFactory.createBarChart((String) data.getData().get(0).get(0), "Category",
+					"Value", createDataset(data, index), PlotOrientation.VERTICAL, true, true, false);
+			
+		}
 		ChartPanel chartPanel = new ChartPanel(barChart);
+		
 		chartPanel.setPreferredSize(new java.awt.Dimension(560, 367));
 	
 		
