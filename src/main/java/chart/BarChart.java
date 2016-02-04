@@ -43,7 +43,7 @@ public class BarChart extends JFrame{
         
         
         add(cp);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         pack();
 	}
 

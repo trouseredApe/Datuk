@@ -28,7 +28,7 @@ public class PieChart extends JFrame{
 		}else{
 			setContentPane(createDemoPanel(data, index, String.valueOf(data.getData().get(0).get(0))));
 		}
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         pack();
 		
 	}

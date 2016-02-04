@@ -44,6 +44,7 @@ public class XYChart extends JFrame{
 	      renderer.setSeriesPaint( 0 , Color.RED );
 	      renderer.setSeriesStroke( 0 , new BasicStroke( .5f ));
 	      plot.setRenderer( renderer ); 
+	      setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 	      setContentPane( chartPanel ); 
 	   }
 	   
