@@ -2,6 +2,8 @@ package chart;
 import java.awt.BasicStroke;
 import java.awt.Color;
 
+import javax.swing.JFrame;
+
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -16,7 +18,7 @@ import org.jfree.ui.ApplicationFrame;
 import data.Data;
 
 
-public class XYChart extends ApplicationFrame {
+public class XYChart extends JFrame{
 
 	   /**
 	 * 

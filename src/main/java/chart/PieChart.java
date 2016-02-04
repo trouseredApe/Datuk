@@ -2,6 +2,7 @@ package chart;
 
 import java.util.ArrayList;
 
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import org.jfree.chart.ChartFactory;
@@ -13,7 +14,7 @@ import org.jfree.ui.ApplicationFrame;
 
 import data.Data;
 
-public class PieChart extends ApplicationFrame {
+public class PieChart extends JFrame{
 
 	/**
 	 * 
@@ -27,7 +28,8 @@ public class PieChart extends ApplicationFrame {
 		}else{
 			setContentPane(createDemoPanel(data, index, String.valueOf(data.getData().get(0).get(0))));
 		}
-		this.pack();
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        pack();
 		
 	}
 

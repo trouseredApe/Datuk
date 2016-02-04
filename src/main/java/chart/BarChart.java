@@ -1,6 +1,9 @@
 package chart;
 
+import java.awt.Dimension;
 import java.util.ArrayList;
+
+import javax.swing.JFrame;
 
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
@@ -12,7 +15,7 @@ import org.jfree.ui.ApplicationFrame;
 
 import data.Data;
 
-public class BarChart extends ApplicationFrame {
+public class BarChart extends JFrame{
 	/**
 	 * 
 	 */
@@ -30,12 +33,18 @@ public class BarChart extends ApplicationFrame {
 					"Value", createDataset(data, index), PlotOrientation.VERTICAL, true, true, false);
 			
 		}
-		ChartPanel chartPanel = new ChartPanel(barChart);
-		
-		chartPanel.setPreferredSize(new java.awt.Dimension(560, 367));
-	
-		
-		setContentPane(chartPanel);
+		ChartPanel cp = new ChartPanel(barChart) {
+
+            @Override
+            public Dimension getPreferredSize() {
+                return new Dimension(320, 240);
+            }
+        };
+        
+        
+        add(cp);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        pack();
 	}
 
 	private CategoryDataset createDataset(Data data, int index) {
