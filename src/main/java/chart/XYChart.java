@@ -13,7 +13,6 @@ import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
-import org.jfree.ui.ApplicationFrame;
 
 import data.Data;
 
@@ -39,6 +38,7 @@ public class XYChart extends JFrame{
 	         
 	      ChartPanel chartPanel = new ChartPanel( xylineChart );
 	      chartPanel.setPreferredSize( new java.awt.Dimension( 560 , 367 ) );
+	      chartPanel.setMouseWheelEnabled(true);
 	      final XYPlot plot = xylineChart.getXYPlot( );
 	      XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer( );
 	      renderer.setSeriesPaint( 0 , Color.RED );

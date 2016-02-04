@@ -11,7 +11,6 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.CategoryDataset;
 import org.jfree.data.category.DefaultCategoryDataset;
-import org.jfree.ui.ApplicationFrame;
 
 import data.Data;
 
@@ -34,12 +33,18 @@ public class BarChart extends JFrame{
 			
 		}
 		ChartPanel cp = new ChartPanel(barChart) {
+			
+            /**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
 
-            @Override
+			@Override
             public Dimension getPreferredSize() {
                 return new Dimension(320, 240);
             }
         };
+        cp.setMouseWheelEnabled(true);
         
         
         add(cp);
