@@ -19,10 +19,10 @@ public class BarChart extends JFrame{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
+	JFreeChart barChart;
 	public BarChart(String applicationTitle, Data data, int index) {
 		super(applicationTitle);
-		JFreeChart barChart;
+		
 		if(index>0){
 			barChart = ChartFactory.createBarChart((String) data.getData().get(0).get(index - 1), "Category",
 					"Value", createDataset(data, index), PlotOrientation.VERTICAL, true, true, false);

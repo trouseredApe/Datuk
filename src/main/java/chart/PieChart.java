@@ -19,7 +19,7 @@ public class PieChart extends JFrame{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
+	static JFreeChart pieChart;
 	public PieChart(String applicationTitle, Data data, int index) {
 		super(applicationTitle);
 		if(index>0){
@@ -43,9 +43,7 @@ public class PieChart extends JFrame{
 						items.get(j)[1] = items.get(j)[1] + 1;
 						found = true;
 					}
-
 				}
-
 				if (!found) {
 					try {
 						double[] newElement = new double[2];
@@ -70,19 +68,17 @@ public class PieChart extends JFrame{
 		return dataset;
 	}
 
-	private static JFreeChart createChart(PieDataset dataset, String name) {
-		JFreeChart chart = ChartFactory.createPieChart(name, // chart
-																// title
+	private static void createChart(PieDataset dataset, String name) {
+		pieChart = ChartFactory.createPieChart(name, // chart
 				dataset, // data
 				true, // include legend
 				true, false);
 
-		return chart;
 	}
 
 	public static JPanel createDemoPanel(Data data, int index, String title) {
-		JFreeChart chart = createChart(createDataset(data, index), title);
-		return new ChartPanel(chart);
+		createChart(createDataset(data, index), title);
+		return new ChartPanel(pieChart);
 	}
 
 }
