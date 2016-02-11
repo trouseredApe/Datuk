@@ -23,7 +23,7 @@ public class XYChart extends JFrame{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	JFreeChart xylineChart;
+	public JFreeChart xylineChart;
 	public XYChart( String applicationTitle, String chartTitle, String seriesName, 
 			Data data, int index1, int index2){
 		

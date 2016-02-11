@@ -19,7 +19,7 @@ public class BarChart extends JFrame{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	JFreeChart barChart;
+	public JFreeChart barChart;
 	public BarChart(String applicationTitle, Data data, int index) {
 		super(applicationTitle);
 		

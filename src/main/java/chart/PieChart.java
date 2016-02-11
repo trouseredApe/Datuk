@@ -19,7 +19,7 @@ public class PieChart extends JFrame{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	static JFreeChart pieChart;
+	public static JFreeChart pieChart;
 	public PieChart(String applicationTitle, Data data, int index) {
 		super(applicationTitle);
 		if(index>0){
