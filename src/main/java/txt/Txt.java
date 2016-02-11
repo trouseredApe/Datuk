@@ -11,13 +11,13 @@ import data.Data;
 
 public class Txt {
 	String path;
+
 	public Txt(String path) {
 		this.path=path;
 	}
 	
 	public void writeDataWithoutTitles(Data data, boolean onlyNumbers) throws IOException {
-
-		if (path.equals(null)) {
+		if (path == null) {
 			path = "defaultData.data";
 		} else {
 			path = path.replace(".xls", ".data");
@@ -39,8 +39,7 @@ public class Txt {
 	}
 
 	public void writeData(Data data, boolean onlyNumbers) throws IOException {
-
-		if (path.equals(null)) {
+		if (path == null) {
 			path = "defaultData.data";
 		} else {
 			path = path.replace(".xls", ".data");
@@ -62,7 +61,6 @@ public class Txt {
 	}
 
 	private void writeNumbersRow(int row, Data data, BufferedWriter out) throws IOException {
-
 		StringBuilder stringBuilder = new StringBuilder();
 
 		Integer rowSize = Integer.valueOf(data.getData().get(row).size());
@@ -81,13 +79,10 @@ public class Txt {
 	}
 
 	private void writeRow(int row, Data data, BufferedWriter out) throws IOException {
-
 		StringBuilder stringBuilder = new StringBuilder();
 		
-
 		Integer rowSize = Integer.valueOf(data.getData().get(row).size());
 		for (int col = 0; col < rowSize - 1; col++) {
-
 			stringBuilder.append(data.getData().get(row).get(col).toString());
 			stringBuilder.append(",");
 			
