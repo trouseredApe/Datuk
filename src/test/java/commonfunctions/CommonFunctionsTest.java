@@ -10,20 +10,19 @@ public class CommonFunctionsTest {
 	CommonFunctions cf;
 	@Before
 	public void initialize(){
-		 cf = new CommonFunctions();  
+		cf = new CommonFunctions();  
 	}
 	@Test
 	public void testNumber() {
-        assertTrue(cf.isNumeric("4"));  
+		assertTrue(cf.isNumeric("4"));  
 	}
 	@Test
 	public void testCharacter() { 
-        assertFalse(cf.isNumeric("a"));  
+		assertFalse(cf.isNumeric("a"));  
 	}
 	@Test
 	public void testString() { 
-     
-        assertFalse(cf.isNumeric("Hello World"));  
+		assertFalse(cf.isNumeric("Hello World"));  
 	}
 
 }
