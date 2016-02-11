@@ -13,15 +13,15 @@ public class CommonFunctionsTest {
 		cf = new CommonFunctions();  
 	}
 	@Test
-	public void testNumber() {
+	public void testisNumericNumber() {
 		assertTrue(cf.isNumeric("4"));  
 	}
 	@Test
-	public void testCharacter() { 
+	public void testisNumericCharacter() { 
 		assertFalse(cf.isNumeric("a"));  
 	}
 	@Test
-	public void testString() { 
+	public void testisNumericString() { 
 		assertFalse(cf.isNumeric("Hello World"));  
 	}
 
