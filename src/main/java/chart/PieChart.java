@@ -31,6 +31,12 @@ public class PieChart extends JFrame{
         pack();
 		
 	}
+	public PieChart(String applicationTitle, String chartTitle, Data data, int index){
+		super(applicationTitle);
+		setContentPane(createDemoPanel(data, index, chartTitle));
+        setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+        pack();
+	}
 
 	private static PieDataset createDataset(Data data, int index) {
 		boolean found = false;

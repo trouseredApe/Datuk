@@ -32,6 +32,17 @@ public class BarChart extends JFrame{
 					"Value", createDataset(data, index), PlotOrientation.VERTICAL, true, true, false);
 			
 		}
+		createChart();
+	}
+	public BarChart(String applicationTitle, String chartTitle, Data data, int index){
+		super(applicationTitle);
+
+		barChart = ChartFactory.createBarChart(chartTitle, "Category",
+				"Value", createDataset(data, index), PlotOrientation.VERTICAL, true, true, false);
+		createChart();
+		
+	}
+	private void createChart(){
 		ChartPanel cp = new ChartPanel(barChart) {
 			
             /**

@@ -74,8 +74,5 @@ public class Cluster {
 		Clusterer clusterer = new SOM(xdim, ydim, grid, iterations, learningRate, initialRadius, learning, nbf, dm);
 		return clusterer.cluster(data);
 	}
-	
-	
-	
-	
+
 }
